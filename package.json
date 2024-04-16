@@ -1,0 +1,22 @@
+{
+  "name": "uton",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "gsap": "^3.12.5",
+    "imagesloaded": "^5.0.0",
+    "locomotive-scroll": "^4.1.4"
+  },
+  "config": {
+    "vite": "vite.config.js"
+  }
+}

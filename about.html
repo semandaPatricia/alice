@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navie</title>
+	<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="https://use.typekit.net/njz5ajv.css">
+		<!-- Link to base CSS file -->
+    <link rel="stylesheet"   type="text/css" href="css/base.css">
+    <!-- Link to about page specific CSS file -->
+    <link rel="stylesheet" href="css/about.css">
+    <script>
+      // Check if browser supports CSS Variables
+      if (!window.CSS || !window.CSS.supports || !window.CSS.supports('color', 'var(--test-color)')) {
+          // Alert the user if CSS Variables are not supported
+          alert("Please view this demo in a modern browser that supports CSS Variables.");
+      } else {
+          // Add 'js' class to <html> element to indicate JavaScript support
+          document.documentElement.classList.add("js");
+      }
+  </script>
+<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+</head>
+<body>
+    <div class="frame">
+        <h1 class="frame__title">Column Scroll</h1>
+        <nav class="frame__links">
+            <a href="/">Home</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="https://springlife.webflow.io/">Journal</a>
+        </nav>
+        <button class="unbutton button-menu" aria-label="Open the menu"><span></span></button>
+    </div>
+   
+                         <!-- CONTENT HERE -->
+  <div class="bgimg-1">
+     <!-- music player content -->
+     <div class="music-player-container">
+        <div class="toggle-player">
+          <ion-icon name="remove-outline"></ion-icon>
+        </div>
+        <div class="avatar">
+         <img src="./fashion-little-boy.jpg" alt="eyes-lady"/>
+        </div>
+  
+        <div class="player">
+          <div class="sound-bars-lottie">
+            <div class="sound-bars">   
+      <!--The soundbar goes here animated by body movin plugin-->
+            </div>
+      </div>
+          <div class="track-info">
+            <div class="track-name">Track Name</div>
+            <div class="track-artist">Track Artist</div>
+          </div>
+          <div class="track-nav">
+            <div class="prev-track">
+              <ion-icon name="play-back-sharp"></ion-icon>
+            </div>
+            <div class="playpause-track">
+              <ion-icon name="play-sharp"></ion-icon>
+            </div>
+  <div class="next-track">
+      <ion-icon name="play-forward-sharp"></ion-icon> 
+  </div>
+          </div>
+        </div>
+      </div>
+       <!-- parallax scroll with css only -->
+    <div class="caption">
+      <span class="border">SCROLL DOWN</span>
+    </div>
+  </div>
+  
+  <div style="color: #0a0606;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+    <h3 style="text-align:center;">About me!</h3>
+    <p>
+        I'm just a person with a passion for life and a love for all things creative.  I've always had a knack for <strong>artsy and creative stuff</strong>, 
+        and I'm constantly exploring new ways to express myself.
+    </p>
+ 
+    <div class="why-here">
+        <h2>Why I'm Here</h2>
+        <p>
+           FOMO! So, why did I build this website from scratch? Well, it all boils down to one thing: connection. I believe that sharing our experiences, passions, and perspectives can spark meaningful conversations. Whether it's through storytelling, sharing tips and tricks, or simply having a good laugh together, 
+            I'm here to create a space where I can feel seen and heard.I deleted most of my social media sites for alittle more than two years.But i guess i had FOMO so here i am.
+        </p>
+    </div>
+
+  </div>
+  
+  <div class="bgimg-2">
+    <div class="caption">
+      <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">STILL HERE?</span>
+    </div>
+  </div>
+  
+  <div style="position:relative;">
+    <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+        
+            <h2>What You'll Find Here</h2>
+            <p> You'll find a little bit of everything that makes me who I am. From <strong>my interests or hobbies</strong> to <strong>creative stuff</strong> </p>
+        
+    </div>
+  </div>
+  
+  <div class="bgimg-3">
+    <div class="caption">
+      <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>
+    </div>
+  </div>
+  
+  <div style="position:relative;">
+    <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+        <h2>Let's Connect!</h2>
+        <p>I'd love to hear from you! Whether you have a question, a suggestion, or just want to say hi, feel free to get to me  <strong>via X or email.</strong> </p>
+    </div>
+  </div>
+  
+  <div class="bgimg-1">
+    <div class="caption">
+      <span class="border">COOL!</span>
+    </div>
+  </div>
+   <!-- JS for music player -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js" integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/main.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+</body>
+</html>

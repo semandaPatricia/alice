@@ -1,0 +1,240 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    color: #777;;
+  }
+  
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  .bgimg-1 {
+    background-image: url("https://images.pexels.com/photos/8347499/pexels-photo-8347499.jpeg");
+    min-height: 100%;
+  }
+  
+  .bgimg-2 {
+    background-image: url("https://images.pexels.com/photos/8347501/pexels-photo-8347501.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    min-height: 400px;
+  }
+  
+  .bgimg-3 {
+    background-image: url("https://images.pexels.com/photos/8347500/pexels-photo-8347500.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    min-height: 400px;
+  }
+  
+  .caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+  }
+  
+  .caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+  }
+  
+  h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+  }
+  
+  .why-here h2{
+    color: black;
+    font-size: 18px;
+
+  }
+
+                              /*music player css*/
+
+ .music-player-container{
+    position: fixed;
+    bottom: 4rem;
+    left: 4rem;
+    width: 480px;
+    transition: all 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.music-player-container.hide {
+    width: 180px;
+}
+.music-player-container.hide .track-info,
+.music-player-container.hide .track-nav{
+    transition: all 0s ease;
+    opacity: 0;
+}
+.toggle-player{
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 40px;
+    z-index: 2;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    border:  1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+.avatar{
+    position: absolute;
+    top: -30px;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+}
+.avatar img{
+    width: 100%;
+    height: 100%;
+}
+
+.sound-bars{
+    flex: 1;
+    width: 50px;
+    height: 50px;
+    margin: 0 20px;
+}
+.player {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 70px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 0 1.5rem 0 100px;
+}
+.track-info{
+    flex: 2;
+    margin-left: 1rem;
+    transition: all 0.25s ease;
+}
+.track-name{
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    pointer-events: none;
+    color: #fff;
+}
+.track-artist{
+    font-family: "Arame Mono";
+    font-size: 0.7rem;
+    letter-spacing: 4px;
+    opacity: 0.5;
+    pointer-events: none;
+    color: #fff;
+}
+
+.track-nav{
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition:  all 0.25s ease;
+}
+.playpause-track,
+.prev-track,
+.next-track {
+    padding: 5px 10px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.playpause-track ion-icon {
+    font-size: 20px;
+}
+
+
+
+
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .music-player-container {
+        bottom: 2rem; /* Adjust position from bottom */
+        left: 2rem; /* Adjust position from left */
+        width: 90vw; /* Adjust width to fit viewport width */
+        transition: all 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    .music-player-container.hide {
+        width: 80vw; /* Adjust width for hidden state */
+    }
+
+    .toggle-player {
+        top: 0.4rem; /* Adjust position from top */
+        right: 1rem; /* Adjust position from right */
+        width: 2rem; /* Adjust width */
+        height: 2rem; /* Adjust height */
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    .avatar {
+        top: 0.5rem; /* Adjust position from top */
+        width: 70px; /* Adjust width */
+        height: 70px; /* Adjust height */
+    }
+
+    .sound-bars {
+        width: 30px; /* Adjust width */
+        height: 30px; /* Adjust height */
+        margin: 0 10px; /* Adjust margin */
+    }
+
+    .player {
+        height: auto; /* Adjust height to fit content */
+        padding: 1rem; /* Adjust padding */
+    }
+
+    .track-info {
+        margin-left: 0.5rem; /* Adjust margin */
+    }
+
+    .track-name {
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    .track-artist {
+        font-size: 0.75rem; /* Adjust font size */
+    }
+
+    .track-nav {
+        padding: 0.5rem; /* Adjust padding */
+    }
+
+    .playpause-track,
+    .prev-track,
+    .next-track {
+        padding: 0.5rem; /* Adjust padding */
+    }
+
+    .playpause-track ion-icon {
+        font-size: 1.5rem; /* Adjust font size */
+    }
+}
+
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    body {
+        background-position: center top; /* Adjust background position for mobile */
+        background-size: cover; /* Maintain cover size for mobile */
+    }
+}
